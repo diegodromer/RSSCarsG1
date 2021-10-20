@@ -98,8 +98,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\diego\Desktop\E_wtNuqVUAQk_IX - Copy.jpg" />
-                                                <entry key="scalingPercent" value="113" />
+                                                <entry key="imagePath" value="C:\Users\diego\AndroidStudioProjects\Target Work\E_wtNuqVUAQk_IX - Copy.jpg" />
+                                                <entry key="scalingPercent" value="96" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -136,6 +136,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ff0000" />
                                       <entry key="outputName" value="ic_icon" />
                                     </map>
                                   </option>

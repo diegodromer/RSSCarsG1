@@ -31,23 +31,21 @@
 
         <ImageView
             android:id="@+id/ivNews"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="12dp"
             android:layout_width="wrap_content"
-            tools:background="@mipmap/ic_icon_foreground"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
             android:adjustViewBounds="true"
-
-            />
+            android:scaleType="centerCrop"
+            tools:background="@mipmap/ic_icon_foreground" />
 
         <TextView
             android:id="@+id/txtContentDesc"
             android:layout_width="match_parent"
-            android:layout_marginTop="12dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="8dp"
             android:contentDescription="Descrition news"
             android:ellipsize="end"
@@ -55,8 +53,6 @@
             android:textSize="16sp"
             android:textStyle="normal"
             tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
-
-
 
         <TextView
             android:id="@+id/txtPubdate"
@@ -69,7 +65,7 @@
             android:contentDescription="Date"
             android:text="2021-10-14 18:33:00"
             android:textSize="12sp"
-            android:textStyle="italic" />
+            android:textStyle="normal" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

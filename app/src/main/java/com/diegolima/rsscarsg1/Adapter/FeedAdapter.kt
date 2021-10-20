@@ -10,7 +10,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.diegolima.rsscarsg1.Interface.ItemClickListener
 import com.diegolima.rsscarsg1.R
 import com.diegolima.rsscarsg1.model.RSSObject
@@ -84,7 +83,10 @@ class FeedAdapter (private val rssObject: RSSObject, private val mContext: Conte
         holder.setItemClickListener(ItemClickListener { view, position, isLongClick ->
             if(!isLongClick){
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(rssObject.items[position].link))
+                browserIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 mContext.startActivity(browserIntent)
+            }else{
+                Toast.makeText(mContext, rssObject.items[position].title, Toast.LENGTH_SHORT).show()
             }
         })
     }

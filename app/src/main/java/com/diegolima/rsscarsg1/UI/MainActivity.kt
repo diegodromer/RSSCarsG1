@@ -67,6 +67,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rss() {
+        pbLoading.visibility = View.GONE
+        recyclerView.visibility = View.VISIBLE
 
         var exception: Exception? = null
 
@@ -88,8 +90,6 @@ class MainActivity : AppCompatActivity() {
                 } catch (e: Exception) {
                     messageNotification("Erro ao carregar. Tente novamente.")
                 }
-                pbLoading.visibility = View.GONE
-                recyclerView.visibility = View.VISIBLE
             }
 
             override fun doInBackground(vararg params: String): String? {
